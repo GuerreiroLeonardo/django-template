@@ -57,6 +57,17 @@ psycopg2 = "*"
 whitenoise = "*"
 
 [[package]]
+name = "gdal"
+version = "3.1.4"
+description = "GDAL: Geospatial Data Abstraction Library"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+numpy = ["numpy (>1.0.0)"]
+
+[[package]]
 name = "prettyconf"
 version = "2.1.0"
 description = "Separation of settings from code."
@@ -146,7 +157,7 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.0"
-content-hash = "9296d6a35ba99ee81886f523acf051cf8bce8643d0596c3851c74b8f93b2d883"
+content-hash = "a78c59d303cabe21343b3220c123af0366cb15a17c25fcca600e3accd5ab70d7"
 
 [metadata.files]
 asgiref = [
@@ -168,6 +179,9 @@ django = [
 django-heroku = [
     {file = "django-heroku-0.3.1.tar.gz", hash = "sha256:6af4bc3ae4a9b55eaad6dbe5164918982d2762661aebc9f83d9fa49f6009514e"},
     {file = "django_heroku-0.3.1-py2.py3-none-any.whl", hash = "sha256:2bc690aab89eedbe01311752320a9a12e7548e3b0ed102681acc5736a41a4762"},
+]
+gdal = [
+    {file = "GDAL-3.1.4.tar.gz", hash = "sha256:8fd190c98eb6880749ad1675838967ca7247ff6b64f7f5998f66ce4087f96c32"},
 ]
 prettyconf = [
     {file = "prettyconf-2.1.0.tar.gz", hash = "sha256:358af2f0d722999eaa4b3e0eb790fd10fad33bcb697d9bcacd53b58ff7fb342e"},
