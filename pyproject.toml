@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "django-project-template"
+version = "0.1.0"
+description = "Django project Template"
+authors = ["Leonardo Guerreiro"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = "^3.1.2"
+prettyconf = "^2.1.0"
+sentry-sdk = "^0.19.1"
+dj-database-url = "^0.5.0"
+django-heroku = "^0.3.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

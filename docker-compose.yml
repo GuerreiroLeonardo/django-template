@@ -1,0 +1,15 @@
+version: "3.1"
+
+services:
+    db:
+        image: kartoza/postgis:12.1
+        shm_size: "2gb"
+        restart: always
+        ports:
+            - 5432:5432
+        volumes:
+            - ./data/postgres:/var/lib/postgresql
+        environment:
+            - POSTGRES_DBNAME=local_db_{{ project_name }}
+            - POSTGRES_USER=local_db_user
+            - POSTGRES_PASS=local_db_pass
