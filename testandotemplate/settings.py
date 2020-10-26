@@ -16,6 +16,7 @@ import sentry_sdk
 import os
 import dj_database_url
 from sentry_sdk.integrations.django import DjangoIntegration
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -81,7 +82,7 @@ WSGI_APPLICATION = 'testandotemplate.wsgi.application'
 
 DATABASE_URL = config(
     "DATABASE_URL",
-    default="postgis://local_db_user:local_db_pass@127.0.0.1:5432/testandotemplate",
+    default="postgis://local_db_user:local_db_pass@127.0.0.1:5432/local_db_test",
 )
 DATABASE_URL = DATABASE_URL.replace("postgres://", "postgis://")
 DATABASES = {"default": dj_database_url.parse(DATABASE_URL)}
@@ -118,7 +119,7 @@ USE_L10N = True
 USE_TZ = True
 LANGUAGES = "pt-br"
 LANGUAGES = [
-    ("pt_br", "Portugês Brasil"),
+    ("pt-br", "Portugês Brasil"),
 ]
 
 
