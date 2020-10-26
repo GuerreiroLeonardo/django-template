@@ -5,7 +5,7 @@ description = "Django project Template"
 authors = ["Leonardo Guerreiro"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "3.9.0"
 Django = "^3.1.2"
 prettyconf = "^2.1.0"
 sentry-sdk = "^0.19.1"
